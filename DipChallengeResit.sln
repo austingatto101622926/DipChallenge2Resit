@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DipChallengeResit_DB", "DipChallengeResit_DB\DipChallengeResit_DB.sqlproj", "{20441565-9133-4225-A6C6-6B2A6D74CC31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DipChallengeResit_Api", "DipChallengeResit_Api\DipChallengeResit_Api.csproj", "{14D983C5-52E9-4713-A321-8497A491ACA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{20441565-9133-4225-A6C6-6B2A6D74CC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20441565-9133-4225-A6C6-6B2A6D74CC31}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20441565-9133-4225-A6C6-6B2A6D74CC31}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{14D983C5-52E9-4713-A321-8497A491ACA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D983C5-52E9-4713-A321-8497A491ACA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D983C5-52E9-4713-A321-8497A491ACA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D983C5-52E9-4713-A321-8497A491ACA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
