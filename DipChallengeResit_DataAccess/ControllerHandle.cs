@@ -80,6 +80,11 @@ namespace DipChallengeResit_DataAccess
         {
             T result = default(T);
             HttpResponseMessage response = await Client.DeleteAsync($"/api/{ControlPath}/{id}");
+            if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+            {
+                string message = await response.Content.ReadAsStringAsync();
+                throw new Exception($"Bad Request: {message}");
+            }
             if (response.IsSuccessStatusCode)
             {
                 result = await response.Content.ReadAsAsync<T>();

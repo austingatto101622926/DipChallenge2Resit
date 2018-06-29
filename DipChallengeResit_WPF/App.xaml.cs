@@ -14,10 +14,17 @@ namespace DipChallengeResit_WPF
     public partial class App : Application
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
-        private void App_UnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+
+        protected override void OnStartup(StartupEventArgs e)
         {
-            logger.Fatal($"Unhandled Exception thrown: {e.Exception.Message}");
-            e.Handled = true;
+            AppDomain.CurrentDomain.UnhandledException += (sender, args) => UnhandledExceptionEventHandler(sender, args);
+            base.OnStartup(e);
+        }
+
+        private void UnhandledExceptionEventHandler(object sender,  UnhandledExceptionEventArgs args)
+        {
+            Exception e = args.ExceptionObject as Exception;
+            logger.Fatal($"Unhandled Exception thrown: {e.Message}");
         }
     }
 }

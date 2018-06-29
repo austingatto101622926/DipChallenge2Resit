@@ -95,7 +95,10 @@ namespace DipChallengeResit_Api.Controllers
             {
                 return NotFound();
             }
-
+            if (owner.Pets.Count > 0)
+            {
+                return BadRequest("DatabaseConstraint: Cannot delete owner with pets");
+            }
             db.Owners.Remove(owner);
             await db.SaveChangesAsync();
 

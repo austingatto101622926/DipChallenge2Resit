@@ -21,6 +21,7 @@ namespace DipChallengeResit_WPF
     /// </summary>
     public partial class Owners : Page
     {
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         Control Control;
         List<Owner> owners;
         Owner SelectedOwner;
@@ -75,7 +76,15 @@ namespace DipChallengeResit_WPF
 
         private async void Delete_Click(object sender, RoutedEventArgs e)
         {
-            await Control.DataAccess.Owner.DELETE(SelectedOwner.OwnerID);
+            try
+            {
+                await Control.DataAccess.Owner.DELETE(SelectedOwner.OwnerID);
+            }
+            catch (Exception ex)
+            {
+                logger.Fatal($"Delete Owner Api Failure: {ex.Message}");
+                MessageBox.Show(ex.Message);
+            }
             PopulateElements();
         }
 

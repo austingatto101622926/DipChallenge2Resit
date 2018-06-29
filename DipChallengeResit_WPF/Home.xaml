@@ -10,5 +10,6 @@
     <Grid>
         <Button Content="Procedures" HorizontalAlignment="Left" Margin="350,200,0,0" VerticalAlignment="Top" Width="75" Click="Procedures_Click"/>
         <Button Content="Owners" HorizontalAlignment="Left" Margin="350,230,0,0" VerticalAlignment="Top" Width="75" Click="Owners_Click"/>
+        <Button Content="Throw Error" HorizontalAlignment="Left" Margin="350,260,0,0" VerticalAlignment="Top" Width="75" Click="ThrowError_Click"/>
     </Grid>
 </Page>

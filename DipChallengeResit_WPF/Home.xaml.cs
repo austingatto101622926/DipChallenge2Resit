@@ -36,5 +36,10 @@ namespace DipChallengeResit_WPF
         {
             NavigationService.Navigate(Control.Owners);
         }
+
+        private void ThrowError_Click(object sender, RoutedEventArgs e)
+        {
+            throw new Exception("VERY BAD ERROR");
+        }
     }
 }
