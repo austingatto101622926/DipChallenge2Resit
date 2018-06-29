@@ -28,6 +28,7 @@ namespace DipChallengeResit_Api.Models
         [JsonIgnore]
         public virtual Pet Pet { get; set; }
         
+        [JsonIgnore]
         public virtual Procedure Procedure { get; set; }
     }
 }
