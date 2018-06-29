@@ -102,6 +102,8 @@ namespace DipChallengeResit_WPF
                 if (InputSurname.Text.Any(char.IsDigit)) throw new ValidationFailureException("Surname cannot contain numbers");
                 if (InputGivenName.Text.Any(char.IsDigit)) throw new ValidationFailureException("GivenName cannot contain numbers");
                 if (!InputPhone.Text.Trim().All(char.IsDigit)) throw new ValidationFailureException("Phone Number cannot contain letters or special characters");
+
+                if (InputPhone.Text.Trim().Count() > 15) throw new ValidationFailureException("Phone Number too large");
             }
             catch (Exception e)
             {
