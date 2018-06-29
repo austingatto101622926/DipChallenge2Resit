@@ -1,5 +1,6 @@
 namespace DipChallengeResit_Api.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -24,8 +25,9 @@ namespace DipChallengeResit_Api.Models
 
         public int PetID { get; set; }
 
+        [JsonIgnore]
         public virtual Pet Pet { get; set; }
-
+        
         public virtual Procedure Procedure { get; set; }
     }
 }

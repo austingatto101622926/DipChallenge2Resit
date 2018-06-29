@@ -1,5 +1,6 @@
 namespace DipChallengeResit_Api.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -26,6 +27,7 @@ namespace DipChallengeResit_Api.Models
         [StringLength(50)]
         public string phone { get; set; }
 
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pet> Pets { get; set; }
     }

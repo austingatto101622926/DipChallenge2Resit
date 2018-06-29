@@ -1,5 +1,6 @@
 namespace DipChallengeResit_Api.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -25,8 +26,10 @@ namespace DipChallengeResit_Api.Models
 
         public int OwnerID { get; set; }
 
+        [JsonIgnore]
         public virtual Owner Owner { get; set; }
 
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Treatment> Treatments { get; set; }
     }

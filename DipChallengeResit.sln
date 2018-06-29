@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DipChallengeResit_DB", "Dip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DipChallengeResit_Api", "DipChallengeResit_Api\DipChallengeResit_Api.csproj", "{14D983C5-52E9-4713-A321-8497A491ACA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DipChallengeResit_DataAccess", "DipChallengeResit_DataAccess\DipChallengeResit_DataAccess.csproj", "{13485185-414F-4223-8BEE-E2BF3DC819F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{14D983C5-52E9-4713-A321-8497A491ACA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14D983C5-52E9-4713-A321-8497A491ACA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14D983C5-52E9-4713-A321-8497A491ACA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13485185-414F-4223-8BEE-E2BF3DC819F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13485185-414F-4223-8BEE-E2BF3DC819F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13485185-414F-4223-8BEE-E2BF3DC819F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13485185-414F-4223-8BEE-E2BF3DC819F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
