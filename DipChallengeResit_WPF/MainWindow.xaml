@@ -5,5 +5,5 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DipChallengeResit_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Source="Home.xaml">
+        Title="MainWindow" Height="450" Width="800" Source="Home.xaml" Loaded="NavigationWindow_Loaded" Closed="NavigationWindow_Closed">
 </NavigationWindow>

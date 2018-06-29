@@ -8,6 +8,11 @@ namespace DipChallengeResit_WPF
 {
     public class ValidationFailureException : Exception
     {
-        public ValidationFailureException(string message) : base(message) { }
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        public ValidationFailureException(string message) : base(message)
+        {
+            logger.Debug($"ValidationFailureException: {message}");
+        }
+       
     }
 }

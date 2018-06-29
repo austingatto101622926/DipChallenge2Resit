@@ -20,9 +20,21 @@ namespace DipChallengeResit_WPF
     /// </summary>
     public partial class MainWindow : NavigationWindow
     {
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void NavigationWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            logger.Trace("Application Launched");
+        }
+
+        private void NavigationWindow_Closed(object sender, EventArgs e)
+        {
+            logger.Trace("Application Exited");
         }
     }
 }
