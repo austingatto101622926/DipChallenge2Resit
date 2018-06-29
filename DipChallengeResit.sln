@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DipChallengeResit_Api", "Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DipChallengeResit_DataAccess", "DipChallengeResit_DataAccess\DipChallengeResit_DataAccess.csproj", "{13485185-414F-4223-8BEE-E2BF3DC819F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DipChallengeResit_WPF", "DipChallengeResit_WPF\DipChallengeResit_WPF.csproj", "{337D1D7B-2062-4AE1-B98A-8D680E0FEED4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{13485185-414F-4223-8BEE-E2BF3DC819F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13485185-414F-4223-8BEE-E2BF3DC819F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13485185-414F-4223-8BEE-E2BF3DC819F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337D1D7B-2062-4AE1-B98A-8D680E0FEED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337D1D7B-2062-4AE1-B98A-8D680E0FEED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337D1D7B-2062-4AE1-B98A-8D680E0FEED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337D1D7B-2062-4AE1-B98A-8D680E0FEED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

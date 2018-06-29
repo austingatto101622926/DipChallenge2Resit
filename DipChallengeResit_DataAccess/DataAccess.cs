@@ -9,10 +9,10 @@ namespace DipChallengeResit_DataAccess
 {
     public class DataAccess
     {
-        ControllerHandler<Owner> Owner;
-        ControllerHandler<Pet> Pet;
-        ControllerHandler<Procedure> Procedure;
-        ControllerHandler<Treatment> Treatment;
+        public ControllerHandler<Owner> Owner;
+        public ControllerHandler<Pet> Pet;
+        public ControllerHandler<Procedure> Procedure;
+        public ControllerHandler<Treatment> Treatment;
 
         public DataAccess(string baseAddress)
         {
