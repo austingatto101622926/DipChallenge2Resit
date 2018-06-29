@@ -95,15 +95,13 @@ namespace DipChallengeResit_WPF
         {
             try
             {
-                if (SelectedOwner == null) throw new ValidationFailureException("No Owner has been defined");
+                if (InputSurname.Text.Trim() == "") throw new ValidationFailureException("Cannot submit blank Surname value");
+                if (InputGivenName.Text.Trim() == "") throw new ValidationFailureException("Cannot submit blank GivenName value");
+                if (InputPhone.Text.Trim() == "") throw new ValidationFailureException("Cannot submit blank Phone value");
 
-                if (SelectedOwner.Surname.Trim() == "") throw new ValidationFailureException("Cannot submit blank Surname value");
-                if (SelectedOwner.GivenName.Trim() == "") throw new ValidationFailureException("Cannot submit blank GivenName value");
-                if (SelectedOwner.phone.Trim() == "") throw new ValidationFailureException("Cannot submit blank Phone value");
-
-                if (!SelectedOwner.Surname.All(char.IsLetter)) throw new ValidationFailureException("Surname cannot contain numbers or special characters");
-                if (!SelectedOwner.GivenName.All(char.IsLetter)) throw new ValidationFailureException("GivenName cannot contain numbers or special characters");
-                if (!SelectedOwner.Surname.All(char.IsDigit)) throw new ValidationFailureException("Phone Number cannot contain letters or special characters");
+                if (InputSurname.Text.Any(char.IsDigit)) throw new ValidationFailureException("Surname cannot contain numbers");
+                if (InputGivenName.Text.Any(char.IsDigit)) throw new ValidationFailureException("GivenName cannot contain numbers");
+                if (!InputPhone.Text.Trim().All(char.IsDigit)) throw new ValidationFailureException("Phone Number cannot contain letters or special characters");
             }
             catch (Exception e)
             {
